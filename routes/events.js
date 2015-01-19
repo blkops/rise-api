@@ -65,6 +65,11 @@ router.get('/', function(req, res) {
   ])
 });
 
+// Create new event form
+router.get('/new', function(req, res) {
+  res.render('events', { title: 'New Event' }); 
+});
+
 // Display specific event info
 router.get('/:id', function(req, res) {
   //res.end('specific event:' + ' ' + JSON.stringify(req.query));
@@ -84,10 +89,7 @@ router.get('/:id', function(req, res) {
       })
 });
 
-// Create new event form
-router.get('/new', function(req, res) {
-  res.render('events', { title: 'New Event' }); 
-});
+
 
 // Create new event action
 router.post('/new', function(req, res) {

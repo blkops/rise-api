@@ -30,6 +30,7 @@ var eventSchema = new mongoose.Schema({
   country: String,
   date: Date,
   time: Date,
+  image: String,
   hashtag: [String]
 });
 

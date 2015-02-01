@@ -62,7 +62,7 @@ router.get('/', function(req, res) {
         'time': '5:00PM',
         'hashtag': []
       }
-  ])
+  ]);
 });
 
 // Create new event form
@@ -86,7 +86,7 @@ router.get('/:id', function(req, res) {
         'country': 'USA',
         'date': new Date(),
         'time': '12:00PM' 
-      })
+      });
 });
 
 

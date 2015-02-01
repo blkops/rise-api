@@ -25,4 +25,3 @@ gulp.task('jshint', function() {
 gulp.task('watch', function() {
   gulp.watch(serverJS).on('change', $.livereload.changed);
 });
-// does this work?
